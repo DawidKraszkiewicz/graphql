@@ -252,19 +252,3 @@ curl -s -X POST http://localhost:8000/graphql \
 }
 ```
 
----
-
-## GraphQL vs REST — kluczowa różnica
-
-Żeby pobrać jednego pokemona z typami, abilities i movami w REST potrzebujesz:
-
-```
-GET /pokemon/pikachu
-GET /ability/static
-GET /ability/lightning-rod
-GET /move/thunder-shock
-GET /move/quick-attack
-... (N+1 requestów)
-```
-
-W GraphQL — **jeden request**, wybierasz dokładnie które pola chcesz.
